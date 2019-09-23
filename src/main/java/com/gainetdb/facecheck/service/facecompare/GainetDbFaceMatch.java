@@ -37,7 +37,7 @@ public class GainetDbFaceMatch {
      */
     public  Result match(JSONObject requestPersonDataDto) {
 
-        log.info("GainetDbFaceMatch->match->景安大数据人脸比对方法传入参数:{}",param);
+        log.info("GainetDbFaceMatch->match->景安大数据人脸比对方法传入参数:{}",requestPersonDataDto);
         HttpHeaders headers = new HttpHeaders();
         headers.set("Content-Type", " application/json;charset=UTF-8");
         ResponseEntity<Result> responseEntity =  RestTemplateUtils.post(personDataDto.getPosturl(),headers, JSON.toJSONString(requestPersonDataDto),Result.class);
