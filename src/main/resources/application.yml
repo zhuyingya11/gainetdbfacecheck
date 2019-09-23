@@ -1,0 +1,6 @@
+personconfig :
+  url: AndroidIdCardNoApi/personalData
+  requreid: 3d9e4e6c04f7063eb969c6e13a3fd00b
+  posturl: http://prove.henanga.gov.cn/proofTerminals/api/channel/sendProof
+server:
+  port: 8080
