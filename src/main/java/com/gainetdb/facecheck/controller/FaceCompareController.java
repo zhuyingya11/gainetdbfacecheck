@@ -2,6 +2,7 @@ package com.gainetdb.facecheck.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.gainetdb.facecheck.dataobject.BaiduCompareResult;
 import com.gainetdb.facecheck.dataobject.PersonDataDto;
 import com.gainetdb.facecheck.dataobject.Result;
 import com.gainetdb.facecheck.service.facecompare.FaceMatch;
@@ -37,6 +38,10 @@ public class FaceCompareController {
           }
           String result =faceMatch.match(idCardNoBase64,JSONObject.parseObject(JSON.toJSONString(personData.getResult()).toString()).get("XP").toString());
           log.info("人脸对比结果Result：{}",result);
+          JSONObject jsonResult=JSONObject.parseObject(result);
+          log.info("百度比对人脸比对结果{}",jsonObject.getJSONObject("result"));
+          BaiduCompareResult  baiduCompareResult=JSONObject.toJavaObject(jsonObject.getJSONObject("result"),BaiduCompareResult.class);
+
           return null;
       }
 }

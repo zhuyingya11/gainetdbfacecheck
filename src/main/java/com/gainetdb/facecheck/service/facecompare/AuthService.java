@@ -90,7 +90,7 @@ public class AuthService {
 
     public static void main(String[] args) {
         String token=getAuth();
-        log.info("token: {}",token);
+      //  log.info("token: {}",token);
         System.out.println("token:"+token);
 
     }
