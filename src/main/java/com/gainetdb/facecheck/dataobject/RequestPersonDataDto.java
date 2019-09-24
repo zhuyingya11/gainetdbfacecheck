@@ -12,6 +12,9 @@ import java.util.Map;
 @AllArgsConstructor
 @Getter
 @Setter
+/**
+ * 包装获取个人信息DTO
+ */
 public class RequestPersonDataDto {
     private String url;
     private String requreid;

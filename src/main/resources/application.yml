@@ -1,6 +1,11 @@
-personconfig :
+propconfig :
+  #获取个人信息接口前缀参数
   url: AndroidIdCardNoApi/personalData
+  #获取个人信息秘钥
   requreid: 3d9e4e6c04f7063eb969c6e13a3fd00b
-  posturl: http://prove.henanga.gov.cn/proofTerminals/api/channel/sendProof
+  #获取个人信息接口url
+  getpersonurl: http://prove.henanga.gov.cn/proofTerminals/api/channel/sendProof
+  #人脸比对接口url
+  compareurl: http://prove.henanga.gov.cn/proofTerminals/api/face/comparison
 server:
   port: 8080

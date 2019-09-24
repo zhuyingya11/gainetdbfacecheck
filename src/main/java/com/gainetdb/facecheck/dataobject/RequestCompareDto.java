@@ -8,9 +8,12 @@ import lombok.*;
 @Getter
 @Setter
 /**
- * 人员包装
+ * 人脸比对传参封装
  */
-public class RequestPersonDto {
+public class RequestCompareDto {
+    private String url;
+    private String requreid;
     private String idCardNo;
+    private String imageBase64;
 
 }

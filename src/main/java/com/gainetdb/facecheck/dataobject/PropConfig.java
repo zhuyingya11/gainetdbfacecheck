@@ -8,9 +8,12 @@ import java.util.Map;
 
 @Data
 @Component
-@ConfigurationProperties(prefix = "personconfig")
-public class PersonDataDto {
-    private String posturl;
+@ConfigurationProperties(prefix = "propconfig")
+public class PropConfig {
+    private String getpersonurl;
+    /**
+     * 前缀url
+     */
     private String url;
     private String requreid;
     private String idCardNoBase64;
