@@ -71,7 +71,7 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>fastjson</artifactId>
-			<version>1.2.60</version>
+			<version>1.2.83</version>
 		</dependency>
 		<!-- /数据解析所需包 -->
 		<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
